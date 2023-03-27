@@ -1,10 +1,13 @@
 import { AppRoutes } from "@/routes";
+import { AppProvider } from "./providers/app";
 
 function App() {
   return (
     <div>
-      <h1>Discussion Den</h1>
-      <AppRoutes />
+      <AppProvider>
+        <h1>Discussion Den</h1>
+        <AppRoutes />
+      </AppProvider>
     </div>
   );
 }
