@@ -15,12 +15,15 @@ interface Credentials {
 }
 
 export const { useUser, useLogin, useRegister, useLogout } = configureAuth<
-  UserResponse,
+  // UserResponse,
+  any,
   any, // error type
   Credentials,
   Credentials
 >({
   userFn: async () => {
+    // check user in the local storage
+    // return { data: "helo" };
     const response = await axios.get<UserResponse>("/");
     return response.data;
   },

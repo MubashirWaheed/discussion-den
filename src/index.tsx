@@ -7,7 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 const { worker } = require("./test/server/browser");
 
 // http request handler msw
-// worker.start();
+worker.start();
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(

@@ -1,5 +1,4 @@
 import { Dashboard } from "@/features/misc";
-import { ReactNode } from "react";
 import { Outlet } from "react-router-dom";
 
 const App = () => {
